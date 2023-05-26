@@ -54,7 +54,45 @@
 
 
     
+	<tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='samurai_image'>
+                  <img src='images/freedom_a.png' width="160"></div>
+                <img src='images/freedom_b.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function samurai_start() {
+                  document.getElementById('samurai_image').style.opacity = "1";
+                }
 
+                function samurai_stop() {
+                  document.getElementById('samurai_image').style.opacity = "0";
+                }
+                samurai_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2303.09833">
+                <papertitle>FreeDoM: Training-Free Energy-Guided Conditional Diffusion Model</papertitle>
+              </a>
+              <br>
+		<strong>Jiwen Yu</strong>,
+              <a href="https://wyhuai.github.io/info/">Yinhuai Wang</a>, 
+              <a href="https://scholar.google.com/citations?user=dUWdX5EAAAAJ">Chen Zhao</a>, 
+		    <a href="https://www.bernardghanem.com/">Bernard Ghanem</a>,
+              <a href="https://jianzhang.tech/">Jian Zhang</a>
+              <br>
+	      ArXiv, 2023 
+	      <br>
+              <a href="https://github.com/vvictoryuki/FreeDoM">code</a> /
+              <a href="https://arxiv.org/abs/2303.09833">arXiv</a>
+              <p></p>
+              <p>
+		FreeDoM is a simple but effective training-free method generating results under control from various conditions using unconditional diffusion models.
+              </p>
+            </td>
+          </tr>	
 
     
 
