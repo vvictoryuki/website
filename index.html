@@ -43,6 +43,9 @@
               <p>
                 Previously, I focus on Image restoration problems which can be seen as a conditional image generation task whose conditions are degraded images. Recently, I extend my research interests to more boarder area such as image generation/editing and video editing using state-of-the-art diffusion-based technologies. In the future, I will continue my research in the topic of AIGC applications in image/video generation/editing/restoration.
               </p>
+		<p>
+			*denotes equal contribution.
+			</p>
             </td>
           </tr>
         </tbody></table>
@@ -55,12 +58,88 @@
 
     
 
-          
+          <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dreamfusion_image'>
+                <img src='images/ddnm_after.png' width="160"></div>
+                <img src='images/ddnm_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function dreamfusion_start() {
+                  document.getElementById('dreamfusion_image').style.opacity = "1";
+                }
+
+                function dreamfusion_stop() {
+                  document.getElementById('dreamfusion_image').style.opacity = "0";
+                }
+                dreamfusion_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://wyhuai.github.io/ddnm.io/">
+                <papertitle>Zero-Shot Image Restoration Using Denoising Diffusion Null-Space Model</papertitle>
+              </a>
+              <br>
+              <a href="https://wyhuai.github.io/info/">Yinhuai Wang*</a>,
+              <strong>Jiwen Yu*</strong>,
+							<a href="https://jianzhang.tech/">Jian Zhang</a>
+              <br>
+              <em>ICLR</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://wyhuai.github.io/ddnm.io/">project page</a>
+              /
+              <a href="https://arxiv.org/pdf/2212.00490.pdf">arXiv</a>
+              /
+              <a href="https://github.com/wyhuai/DDNM">code</a>
+              <p></p>
+              <p>
+              We bring Range-Null space Decomposition (RND) into diffusion models, enabling diverse image restoration tasks in a zero-shot manner, without extra training or optimization.
+              </p>
+            </td>
+          </tr>
 
           
           
 
-          
+          <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='samurai_image'>
+                  <img src='images/rnd_after.jpg' width="160"></div>
+                <img src='images/rnd_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function samurai_start() {
+                  document.getElementById('samurai_image').style.opacity = "1";
+                }
+
+                function samurai_stop() {
+                  document.getElementById('samurai_image').style.opacity = "0";
+                }
+                samurai_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2211.13524">
+                <papertitle>GAN Prior based Null-Space Learning for Consistent Super-Resolution</papertitle>
+              </a>
+              <br>
+              <a href="https://wyhuai.github.io/info/">Yinhuai Wang</a>, 
+              <a href="https://villa.jianzhang.tech/people/yujie-hu-%E8%83%A1%E5%A6%A4%E5%A9%95/">Yujie Hu</a>, 
+              <strong>Jiwen Yu</strong>,
+              <a href="https://jianzhang.tech/">Jian Zhang</a>
+              <br>
+	      <em>AAAI</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+	      <br>
+              <a href="https://github.com/wyhuai/RND">code</a> /
+              <a href="https://arxiv.org/abs/2211.13524">arXiv</a>
+              <p></p>
+              <p>
+		We bring Range-Null space Decomposition (RND) into GAN-Prior based SR models to accelerate the convergence and ensure the downsampling consistency.
+              </p>
+            </td>
+          </tr>	
 
           
 
